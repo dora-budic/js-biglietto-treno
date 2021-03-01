@@ -5,17 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calcolo Prezzo Biglietto Treno</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./master.css">
   </head>
   <body>
     <main>
       <div class="ticket">
-        <h1>Train ticket</h1>
-        <div class="destination">
-          <span>FROM: A</span>
-          <span>TO: B</span>
+        <div class="title">
+          <h1>Train ticket</h1>
         </div>
-        <span id="cost">You have to pay: </span>
+        <div class="info">
+          <div class="passenger-info">
+            <span>Name of passenger: Joe Brown</span>
+            <span>From: Paris</span>
+            <span>To: London</span>
+            <span>Date: 12 May</span>
+          </div>
+          <div class="departure">
+            <span>Departure: 14:30</span>
+          </div>
+          <div class="price-arrival">
+            <span id="cost">Price: </span>
+            <span>Arrive: 16:50</span>
+          </div>
+          <div class="train-info">
+            <span>Train: 3924</span>
+            <span>Platform: 3</span>
+            <span>Carriage No.: 4</span>
+            <span>Seat: a18</span>
+          </div>
+        </div>
+      </div>
+      <div class="ticket-cut">
+        <div class="title">
+          <h3>Train ticket</h3>
+        </div>
+        <div class="info">
+          <span>Name of passenger: Joe Brown</span>
+          <span>From: Paris</span>
+          <span>To: London</span>
+          <div class="train-seat">
+            <span>Train: 3924</span>
+            <span>Seat: a18</span>
+          </div>
+        </div>
       </div>
     </main>
     <script src="./main.js" charset="utf-8"></script>

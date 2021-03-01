@@ -13,18 +13,70 @@ main {
 }
 
 .ticket {
-  width: 500px;
-  height: 200px;
+  width: 600px;
+  height: 192px;
   border: 1px solid black;
-  background-color: #FDFCC0;
-  padding: 20px;
+  border-right: 1px dashed black;
+  background-color: #FCEAC4;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  overflow: hidden;
 }
 
-h1 {
+.ticket-cut {
+  width: 200px;
+  height: 192px;
+  border: 1px solid black;
+  border-left: none;
+  background-color: #FCEAC4;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+.title {
   text-align: center;
+  background-color: #FFA55D;
+  height: 37px;
 }
 
-.destination {
+.ticket .info {
+  display: flex;
+  flex-direction: row;
+}
+
+.passenger-info, .departure, .price-arrival, .train-info {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.departure {
+  justify-content: flex-end;
+}
+
+.price-arrival, .train-info {
+  justify-content: space-between;
+}
+
+.info span {
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.ticket-cut h3 {
+  line-height: 37px;
+}
+
+.ticket-cut .info {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.train-seat {
   display: flex;
   justify-content: space-between;
 }
