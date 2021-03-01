@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: lightblue;
+}
+
+.ticket {
+  width: 500px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: #FDFCC0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.destination {
+  display: flex;
+  justify-content: space-between;
+}
